@@ -8,14 +8,15 @@ def limpa():
 def lin():
     print('—' * 40)
 
-numeros = [0, 10, 42, 70, 100]
+numeros = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100] 
+os.system('cls')
 lin()
 print('JOGO ADIVINHAÇÃO DE NUMERO ENTRE 1 E 100')
 lin()
 print('CARREGANDO')
 for i in numeros:
-    print(i,'%')
-    time.sleep(0.5)
+    print(i,'%', end = '\r')
+    time.sleep(0.3)
 time.sleep(0.3)
 limpa()
 n=random.randint(1, 100)
