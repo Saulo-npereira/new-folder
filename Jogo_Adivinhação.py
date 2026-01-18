@@ -21,7 +21,7 @@ time.sleep(0.3)
 limpa()
 n=random.randint(1, 100)
 n1=int(input('digite um número entre 1 e 100: '))
-tent = 7
+tent = 5
 if n1 == n and tent == 0:
     print('PARABENS VOCÊ ACERTOU DE PRIMEIRA')
 else:
@@ -34,8 +34,10 @@ else:
                 print(f'o numero certo é maior, voce tem {tent} tentativas')
                 n1=int(input('digite um número entre 1 e 100: '))
         tent -= 1
-if n1==n and tent !=7:
+if n1==n and tent !=5:
     print('VOCE ACERTOU O NUMERO')
+else:
+    print('esgotou suas tentativas, você errou o número!')
 
 
     
